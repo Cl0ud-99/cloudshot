@@ -1,0 +1,28 @@
+# 构建产物
+bin/
+obj/
+*.user
+*.suo
+.vs/
+
+# 本机配置（含 DPAPI 加密的有道凭据，换机无效，且不应进仓库）
+config/settings.ini
+
+# 运行时日志（本机使用记录）
+logs/
+*.log
+
+# 分发包二进制（建议走 GitHub Releases，不放进 git 历史）
+dist/*.exe
+dist/*.zip
+
+# 源码压缩包（与目录内容重复）
+Cloudshot-src-*.zip
+
+# 本机开发环境笔记（含个人路径）
+MACHINE.md
+
+# 系统
+Thumbs.db
+desktop.ini
+.DS_Store
